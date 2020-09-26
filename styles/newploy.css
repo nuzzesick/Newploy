@@ -14,7 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
-button {
+button, input {
   background: none;
   border: none;
   outline: 0;
@@ -384,4 +384,56 @@ button:focus {
   width: 1.4rem;
   height: 1.4rem;
   fill: var(--share-icon);
+}
+.authentication-container {
+  padding-top: 4rem;
+}
+.authentication-title {
+  margin: auto auto 1rem auto;
+  width: fit-content;
+  color: var(--title);
+  user-select: none;
+}
+.authentication-form {
+  display: grid;
+  margin: auto;
+  width: fit-content
+}
+.authentication-label {
+  display: flex;
+  color: var(--ploy-title);
+  padding: 0.6rem 0 0.6rem 0;
+}
+.authentication-input {
+  width: 16rem;
+  margin: 0.25rem 0 0.25rem 0;
+  padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+  background: var(--authentication);
+  border-radius: 3px;
+  color: var(--title);
+  font-weight: 600;
+}
+.authentication-button {
+  margin: 1.5rem 0 1.5rem 0;
+  padding: 0.4rem 0 0.4rem 0;
+  font-size: 1rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 3px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.authentication-button:hover {
+  box-shadow: 0 2px 10px var(--authentication-button-box-shadow);
+}
+@media only screen and (min-width: 300px) {
+  .authentication-title {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .authentication-title {
+    font-size: 1.9rem;
+  }
 }

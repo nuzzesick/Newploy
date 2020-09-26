@@ -45,6 +45,8 @@ const Header = ({ link }) => {
                 --share-icon: #bfbfbf;
                 --header-background: #060606f0;
                 --header-shadow: #0000004f;
+                --authentication: #424242;
+                --authentication-button-box-shadow: #3083ff47;
                 background-color: var(--background);
               }
             `}
@@ -65,6 +67,8 @@ const Header = ({ link }) => {
                 --share-icon: #646464;
                 --header-background: #ffffffe6;
                 --header-shadow: #dedede4f;
+                --authentication: #e4e4e4;
+                --authentication-button-box-shadow: #3083ff47;
                 background-color: var(--background);
               }
             `}
